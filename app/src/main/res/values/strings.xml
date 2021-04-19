@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Joy</string>
+    <string name="lorem">Hey we are bringing all your accommodation requirements on your finger tips</string>
+    <string name="lorem1">Lorem Ipsum is simply dummy text of the printing\n and typesetting industry.Lorem Ipsum is simply dummy text. </string>
+    <string name="lorem4">Apply Terms and Conditions</string>
+    <string name="lorem3">Dear customer even though you choose for monthly base but this property manager requested
+you to pay up to 31 st of this month. From 1 st of next month onwards you will be considered as a monthly
+base. </string>
+    <string name="pleasewait">Please Wait</string>
+    <string name="ok_txt">Ok</string>
+    <string name="no_internet_txt">No Internet</string>
+    <string name="default_notification_channel_id" translatable="false">channel</string>
+    <string name="takephoto">Camera</string>
+    <string name="choosefrmgallery">Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="addphoto">Add Photo!</string>
+    <string name="fell_free">Feel Free to Contact for further Assistance</string>
+
+
+
+    <string name="test">Test</string>
+    <string name="forget">Please Enter User Registered Mobilenumber to get OTP</string>
+    <string name="production">Production</string>
+
+    <string-array name="environment_array">
+        <item>@string/test</item>
+        <item>@string/production</item>
+    </string-array>
+
+    <string name="use_live_key_in_production_environment">Please use your live merchant key in production environment</string>
+    <string name="could_not_receive_data">Could not receive data</string>
+    <string name="lorem5">Note : Dear valued customer, if you cancel the booking before OTP confirmation to the property manager you will get 100% Rent amount (Excluding payment gateway charges) and you will claim only 25% of your security deposited amount.</string>
+
+
+    <string name="term1">Guests must update their availability on daily basis through Joy stays app, based on the guest availability the food proceedings will be taken place.</string>
+    <string name="term2">While Check-in guest must carry their original Identity proof (Aadhar, driving license, Passport and Voter ID etc) except Pan card.</string>
+    <string name="term3">Smoking &amp; Alcohol consumption or any other illegal and In disciplinary activities are not encouraged inside the premises and strictly Prohibited.</string>
+    <string name="term4">If guest damages any owner’s property, then they will be penalized for the same.</string>
+    <string name="term5">Property management is not responsible for your valuables.</string>
+    <string name="term6">Refundable amount will be credited or will be issued as per refund policies.</string>
+    <string name="term7">In case if guest’s check-out without any prior intimation or without paying rent, then legal actions will be taken as per management norms.</string>
+    <string name="term8">Without intimation to the property managers, guests’ neighbors &amp; friends are not allowed to stay inside the premises.</string>
+    <string name="term9">Guests should pay the rent on or before 05th of every month, if it is delayed additional amount will be added as a penalty with respective to the month.</string>
+    <string name="term10">One-time maintenance charge will be collected at the time of check out.</string>
+    <string name="termt1">•	Guest must update tomorrow’s availability through joystays app to prepare food without intimation guest may not have a right to ask if the food will be completed.</string>
+    <string name="termt4">• Dear guest while check-in carry your original identity proof except pan card which you uploaded at the time of booking.</string>
+    <string name="termt5">• Smoking and consumption of Alcohol, Birthday party’s drinks in the property premises is strictly prohibited.</string>
+    <string name="termt6">• If guest damage anything inside the premises amount will be collected from guest only. • Property management is not responsible for your valuables.</string>
+    <string name="termt7">• Refundable amount will be credited or will be issued as per refund policies.</string>
+
+</resources>

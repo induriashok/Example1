@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.joystays.joy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/joy_logo_red"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/joy_logo_red"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:node="merge"
+        tools:replace="usesCleartextTraffic">
+        <activity android:name=".activities.BannerImagesActivity"></activity>
+        <activity android:name=".activities.ChatActivity" />
+        <activity android:name=".activities.ZoomImageActivity" />
+        <activity android:name=".activities.OnBoardingActivity" />
+        <activity android:name=".activities.ChangeRoomActivity" />
+
+        <activity
+            android:name=".activities.WanttoVacantActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden">
+
+        </activity>
+<!--        <activity-->
+<!--            android:name=".activities.CashfreePaymentActivity"-->
+<!--            android:configChanges="keyboardHidden|screenSize|locale"-->
+<!--            android:launchMode="singleTop"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:windowSoftInputMode="adjustPan" />-->
+
+        <activity
+            android:name=".activities.CashfreePaymentActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".activities.GiveRateUsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ResetPasswordActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.TransactionDetailsActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.TransactionActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.InviteAndEarnActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.BookingStatusActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activities.OwnerComplaintActivity" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+
+        <activity
+            android:name=".activities.DateActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.TermsAndConditionActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.MapActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.OwnerConformationActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.SecureBookingDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.PaymentMethodActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.TermsAndConditions"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.ContinueBookingActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.RoomMateDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.SelectFloorandRoomActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.HostelDetailsActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:launchMode="singleTop"
+
+            />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.OtpActivity"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity android:name=".activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.ProfilePaymentActvity"
+            android:configChanges="keyboardHidden|screenSize|locale"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.HostelSearchActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".FoodPollActivity"
+            android:launchMode="singleTop" />
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAgDEVcq-w2BgTNdAQqjj67SHnj51yr0Ig" />
+    </application>
+
+</manifest>

@@ -1,0 +1,947 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".activities.HostelDetailsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/check_availability_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/back_arrow_ic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_owner_pic"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+
+                        android:padding="1dp" />
+
+                    <com.joystays.joy.customfonts.CustomTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Property Manger "
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.joystays.joy.customfonts.CustomTextViewBold
+                        android:id="@+id/tv_owner_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Joy Hostel Owner P. Subb Reddy "
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <!-- <com.iprismtech.joy.customfonts.CustomTextViewBold
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="2dp"
+                         android:text="P.Sudakar Reddy"
+                         android:textColor="@color/text_black"
+                         android:textSize="12sp" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.joystays.joy.customfonts.CustomTextViewNormal
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Language :"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/_8sdp" />
+
+                    <com.joystays.joy.customfonts.CustomTextViewNormal
+                        android:id="@+id/tv_owner_languages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="Telugu ,Hindi,English"
+                        android:textColor="@color/text_dark_gray"
+                        android:textSize="@dimen/_8sdp" />
+                </LinearLayout>
+
+                <com.joystays.joy.customfonts.CustomTextViewNormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:maxLines="20"
+                    android:text="@string/fell_free"
+                    android:textSize="@dimen/_6sdp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_call"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/call_icon" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/card_v"
+        android:id="@+id/ll_data">-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/card_v"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:layout_weight="0.65"
+                            android:orientation="vertical">
+
+                            <com.joystays.joy.customfonts.CustomTextViewBold
+                                android:id="@+id/tv_hostel_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:textColor="@color/text_dark_gray"
+                                android:textSize="@dimen/_13sdp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.35"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.joystays.joy.customfonts.CustomTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Code :"
+                                    android:textColor="@color/text_dark_gray"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <com.joystays.joy.customfonts.CustomTextViewBold
+                                    android:id="@+id/tv_hostel_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_3sdp"
+                                    android:text="JOY 0001"
+                                    android:textColor="@color/text_dark_gray"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_banner"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:layout_height="@dimen/_150sdp" />
+
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/editors_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp">
+
+                        </androidx.viewpager.widget.ViewPager>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_125sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:text="1"
+                                android:id="@+id/page_count"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:text="/"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:text="10"
+                                android:id="@+id/final_count"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_fav"
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginRight="@dimen/_11sdp"
+                            android:padding="4dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/location_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:src="@drawable/location_circle_icon" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical">
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:id="@+id/tv_hostel_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/_11sdp" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rating_complete"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/ll_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:background="@drawable/box_green_two"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/box_green"
+                                android:paddingLeft="4.5dp"
+                                android:paddingTop="3dp"
+                                android:paddingRight="4.5dp"
+                                android:paddingBottom="3dp"
+
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_rating_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Very good"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/linear_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_rating_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.joystays.joy.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_110sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_110sdp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Tarriffs"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/_13sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/linear_ac_rooms"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="0.45"
+                            android:background="@drawable/tarrif_gray"
+                            android:gravity="left">
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:id="@+id/ctvn_ac_rooms"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Ac Rooms"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_non_ac_rooms"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="0.45"
+                            android:background="@drawable/tarrif_green"
+                            android:gravity="right">
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:id="@+id/ctvn_non_ac_rooms"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Non Ac Rooms"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_basis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:orientation="horizontal"
+
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/linear_daily_basis"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="0.45"
+                            android:background="@drawable/tarrif_green"
+                            android:gravity="left">
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:id="@+id/ctvn_daily_basis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Daily Basis"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.09"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_monthly_basis"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_weight="0.45"
+                            android:background="@drawable/tarrif_gray"
+                            android:gravity="right">
+
+                            <com.joystays.joy.customfonts.CustomTextViewNormal
+                                android:id="@+id/ctvn_monthly_basis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Monthly Basis"
+                                android:textColor="@color/text_black"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TableLayout
+                        android:id="@+id/tb_prices"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/table_bg"
+                        android:gravity="center">
+
+                    </TableLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:background="@drawable/check_avail_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_sn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text="SI.No"
+                            android:textColor="@color/text_black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray"></View>
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_sharing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text="Shares"
+                            android:textColor="@color/text_black" />
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_owner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text="Owner"
+                            android:textColor="@color/text_black" />
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_advance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text="Advance"
+                            android:textColor="@color/text_black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/gray"></View>
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:paddingVertical="@dimen/_3sdp"
+                            android:text="Joy Price"
+                            android:textColor="@color/lite_green" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"></View>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rview_prices"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <com.joystays.joy.customfonts.CustomTextViewNormal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_noprices"
+                        android:visibility="gone"
+                        android:text=""
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/_10sdp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.joystays.joy.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_110sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_110sdp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Facilities"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.joystays.joy.customfonts.CustomTextViewNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="click on Particular icon for full Details"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:cardElevation="1dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rview_fecilities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.joystays.joy.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_90sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_90sdp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_bg"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Select Date"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.joystays.joy.customfonts.CustomTextViewNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="click on Check in / Check out icon select particular date"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_8sdp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_check_in"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.49"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.joystays.joy.customfonts.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CHECK IN"
+                            android:textColor="@color/text_red"
+                            android:textSize="15sp" />
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_checkin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="DD-MM-YYYT"
+                            android:textColor="@color/text_black"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gray_right_arrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_selectdate"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:src="@drawable/calender_pink" />
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_green_circle"
+                            android:paddingHorizontal="@dimen/_3sdp"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text="30"
+                            android:id="@+id/package_days_tv"
+                            android:textSize="@dimen/_10sdp" />
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/_3sdp"
+                            android:paddingVertical="@dimen/_2sdp"
+                            android:text="days"
+                            android:id="@+id/tv_days"
+                            android:textColor="@color/dark_green"
+                            android:textSize="@dimen/_10sdp" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_check_out"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.49"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.joystays.joy.customfonts.CustomTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CHECK OUT"
+                            android:textColor="@color/text_red"
+                            android:textSize="15sp" />
+
+                        <com.joystays.joy.customfonts.CustomTextViewNormal
+                            android:id="@+id/tv_checkout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="11-07-2019"
+                            android:textColor="@color/text_black"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/gray_arrow_left" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="@dimen/_30sdp">
+
+        <LinearLayout
+            android:id="@+id/linear_bknow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_g">
+
+            <com.joystays.joy.customfonts.CustomTextViewNormal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_14sdp"
+                android:text="Book Now"
+                android:textColor="@color/text_green"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--</LinearLayout>-->
+
+
+    <com.joystays.joy.customfonts.CustomTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_14sdp"
+        android:id="@+id/nodata_tv"
+        android:text="Details are not available"
+        android:textColor="@color/text_green"
+        android:textSize="@dimen/_15sdp" />
+
+</RelativeLayout>

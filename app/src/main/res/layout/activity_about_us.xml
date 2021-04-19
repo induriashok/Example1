@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_a"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/back_arrow_ic" />
+
+            <com.joystays.joy.customfonts.CustomTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:text="About us"
+                android:textColor="@color/text_dark_gray"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/joy_logo_red"
+            />
+        <com.joystays.joy.customfonts.CustomTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="About Joy Stays"/>
+        <com.joystays.joy.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:layout_marginLeft="25dp"
+            android:text="Joy gives a blend of comfort and convenience."
+            />
+        <com.joystays.joy.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_black"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="JOY HOSTELS is India’s first-ever Online Hostel/PG managing and Hostel/PG booking application which can be your one stop solution for finding an ideal place to stay."/>
+        <com.joystays.joy.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:layout_marginLeft="25dp"
+            android:text="Needless to say, the app gives you ‘n’ choices with impeccable browsing experience and offers you a list of options at affordable prices."/>
+
+        <com.joystays.joy.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:layout_marginLeft="25dp"
+            android:text="With benefits listed individually, it becomes easier to compare and make an adamant decision in no time."/>
+        <com.joystays.joy.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:layout_marginLeft="25dp"
+            android:text="In addition, it resolves security issues as the Hostels/PGs are 100% percent trusted and verified."/>
+        <com.joystays.joy.customfonts.CustomTextViewNormal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/text_black"
+            android:textSize="14sp"
+            android:layout_marginLeft="25dp"
+            android:text="A small discomfort makes a lot of difference just like great comfort and convenience! Running for complaints like unclean washrooms,
+erratic power/water supply will now become old school as the amazing app offers you a seamless channel for getting your issues sorted in no time.
+"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

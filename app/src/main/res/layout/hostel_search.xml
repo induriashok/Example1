@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.joystays.joy.customfonts.CustomEditTextNormal
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/round_border"
+        android:focusable="true"
+        android:hint="Search hostel name"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:singleLine="true"
+        android:textSize="@dimen/_12sdp"></com.joystays.joy.customfonts.CustomEditTextNormal>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rview_hostel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.joystays.joy.customfonts.CustomTextViewBold
+        android:id="@+id/tv_no_results"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No search results"
+        android:visibility="gone"></com.joystays.joy.customfonts.CustomTextViewBold>
+</LinearLayout>
+

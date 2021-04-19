@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.joystays.joy.customfonts.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:text="Are you sure want to send notification to room mates "
+            android:textAlignment="center"
+            android:textColor="@color/text_black"></com.joystays.joy.customfonts.CustomTextViewBold>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.joystays.joy.customfonts.CustomTextViewBold
+                android:id="@+id/tv_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:background="@drawable/change_room_bg"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="Yes"
+                android:textColor="@color/text_black"></com.joystays.joy.customfonts.CustomTextViewBold>
+
+            <com.joystays.joy.customfonts.CustomTextViewBold
+                android:id="@+id/tv_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_40sdp"
+                android:background="@drawable/change_room_bg"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="No"
+                android:textColor="@color/text_black"></com.joystays.joy.customfonts.CustomTextViewBold>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

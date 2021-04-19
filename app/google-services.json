@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "460878874370",
+    "firebase_url": "https://joyuser-f897f.firebaseio.com",
+    "project_id": "joyuser-f897f",
+    "storage_bucket": "joyuser-f897f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460878874370:android:99b5c95fcb946f0602e41b",
+        "android_client_info": {
+          "package_name": "com.joystays.joy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460878874370-bqlu7jmb8bt3g3rotcdcg1mbuhnsumvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsBAkXwsC6D4mOzTU_HY3a6t1Dgv90Me8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460878874370-bqlu7jmb8bt3g3rotcdcg1mbuhnsumvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

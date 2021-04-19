@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/light_black"
+    tools:ignore="NewApi">
+    <item
+        android:id="@android:id/mask"
+        tools:ignore="NewApi">
+        <shape android:shape="rectangle">
+            <solid
+                android:color="?android:colorAccent"
+                tools:ignore="NewApi" />
+        </shape>
+    </item>
+</ripple>

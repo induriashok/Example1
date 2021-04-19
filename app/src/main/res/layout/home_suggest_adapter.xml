@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY" />
+</LinearLayout>
